@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <!-- <link rel="icon" type="image/x-icon" href="./imgs/.png"> -->
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+    <!-- Font - 'Poppins' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,200&family=Kaushan+Script&family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        reading-list
+    </div>
+    <dialog>
+        <button id="close-modal" autofocus>&#10005;</button>
+        <form name="newBook" id="input-form" action="" method="">
+            <div class="input-wrapper">
+
+                <div class="input-box">
+                    <label for="book_title">
+                        Book Title*
+                    </label>
+                    <input type="text" class="input" id="book_title" name="book_title" required>
+                </div>
+                <div class="input-box">
+                    <label for="book_author">
+                        Author*
+                    </label>
+                    <input type="text" class="input" id="book_author" name="book_author" required>
+                </div>
+                <div class="input-box">
+                    <label for="book_genre">
+                        Genre*
+                    </label>
+                    <input type="text" class="input" id="book_genre" name="book_genre" required>
+                        <!-- <select id="book_genre" name="book_genre">
+                            <option value="science_fiction">Science Fiction</option>
+                            <option value="historical_fiction">Historical Fiction</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="mystery">Mystery</option>
+                            <option value="romance">Romance</option>
+                            <option value="horror">Horror</option>
+                            <option value="thriller">Thriller</option>
+                            <option value="poetry">Poetry</option>
+                            <option value="philosophy">Philosophy</option>
+                            <option value="biography">Biography</option>
+                            <option value="non_fiction">Non-Fiction</option>
+                        </select> -->
+                </div>
+                <div class="input-box">
+                    <label for="book_pages">
+                        Pages*
+                    </label>
+                    <input type="number" class="input" id="book_pages" name="book_pages" required>
+                </div>
+
+            </div>
+            
+            <div class="submit-box">
+                <input type="submit" id="submit-btn" required>
+            </div>
+        </form>
+    </dialog>
+
+    <div class="content">
+        <div class="lib-add-wrapper">
+            <button id="add-book">+</button>
+        </div>
+        
+        <div class="lib-wrapper">
+            <div class="lib-card">
+                <div class="card-title">
+                    <p>Harry Potter and the Sorcerer's Stone</p>
+                    <div class="card-author">J.K. Rowling</div>
+                </div>
+
+                <div class="card-pages">263 Pages</div>
+                <div class="card-genre">Fantasy Fiction</div>
+                <div class="card-read-status">
+                    <p>Have you read this book?</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="card-delete">
+                    <button href="#" class="delete-icon-wrapper">
+                        <svg id="card-del" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path fill="#7aa7c7" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+                    </button>     
+                </div>
+            </div>
+            <div class="lib-card">
+                <div class="card-title">
+                    <p>Harry Potter and the Sorcerer's Stone</p>
+                    <div class="card-author">J.K. Rowling</div>
+                </div>
+
+                <div class="card-pages">263 Pages</div>
+                <div class="card-genre">Fantasy Fiction</div>
+                <div class="card-read-status">
+                    <p>Have you read this book?</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="card-delete">
+                    <button href="#" class="delete-icon-wrapper">
+                        <svg id="card-del" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path fill="#7aa7c7" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+                    </button>     
+                </div>
+            </div>
+            <div class="lib-card">
+                <div class="card-title">
+                    <p>Harry Potter and the Sorcerer's Stone</p>
+                    <div class="card-author">J.K. Rowling</div>
+                </div>
+
+                <div class="card-pages">263 Pages</div>
+                <div class="card-genre">Fantasy Fiction</div>
+                <div class="card-read-status">
+                    <p>Have you read this book?</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="card-delete">
+                    <button href="#" class="delete-icon-wrapper">
+                        <svg id="card-del" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path fill="#7aa7c7" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+                    </button>     
+                </div>
+            </div>
+            <div class="lib-card">
+                <div class="card-title">
+                    <p>Harry Potter and the Sorcerer's Stone</p>
+                    <div class="card-author">J.K. Rowling</div>
+                </div>
+
+                <div class="card-pages">263 Pages</div>
+                <div class="card-genre">Fantasy Fiction</div>
+                <div class="card-read-status">
+                    <p>Have you read this book?</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="card-delete">
+                    <button href="#" class="delete-icon-wrapper">
+                        <svg id="card-del" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path fill="#7aa7c7" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+                    </button>     
+                </div>
+            </div>
+            <div class="lib-card">
+                <div class="card-title">
+                    <p>Harry Potter and the Sorcerer's Stone</p>
+                    <div class="card-author">J.K. Rowling</div>
+                </div>
+
+                <div class="card-pages">263 Pages</div>
+                <div class="card-genre">Fantasy Fiction</div>
+                <div class="card-read-status">
+                    <p>Have you read this book?</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="card-delete">
+                    <button href="#" class="delete-icon-wrapper">
+                        <svg id="card-del" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path fill="#7aa7c7" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+                    </button>     
+                </div>
+            </div>
+            <div class="lib-card">
+                <div class="card-title">
+                    <p>Harry Potter and the Sorcerer's Stone</p>
+                    <div class="card-author">J.K. Rowling</div>
+                </div>
+
+                <div class="card-pages">263 Pages</div>
+                <div class="card-genre">Fantasy Fiction</div>
+                <div class="card-read-status">
+                    <p>Have you read this book?</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="card-delete">
+                    <button href="#" class="delete-icon-wrapper">
+                        <svg id="card-del" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path fill="#7aa7c7" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+                    </button>     
+                </div>
+            </div>
+            <div class="lib-card">
+                <div class="card-title">
+                    <p>Harry Potter and the Sorcerer's Stone</p>
+                    <div class="card-author">J.K. Rowling</div>
+                </div>
+
+                <div class="card-pages">263 Pages</div>
+                <div class="card-genre">Fantasy Fiction</div>
+                <div class="card-read-status">
+                    <p>Have you read this book?</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="card-delete">
+                    <button href="#" class="delete-icon-wrapper">
+                        <svg id="card-del" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path fill="#7aa7c7" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+                    </button>     
+                </div>
+            </div>
+            <div class="lib-card">
+                <div class="card-title">
+                    <p>Harry Potter and the Sorcerer's Stone</p>
+                    <div class="card-author">J.K. Rowling</div>
+                </div>
+
+                <div class="card-pages">263 Pages</div>
+                <div class="card-genre">Fantasy Fiction</div>
+                <div class="card-read-status">
+                    <p>Have you read this book?</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="card-delete">
+                    <button href="#" class="delete-icon-wrapper">
+                        <svg id="card-del" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path fill="#7aa7c7" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+                    </button>     
+                </div>
+            </div>
+            <div class="lib-card">
+                <div class="card-title">
+                    <p>Harry Potter and the Sorcerer's Stone</p>
+                    <div class="card-author">J.K. Rowling</div>
+                </div>
+
+                <div class="card-pages">263 Pages</div>
+                <div class="card-genre">Fantasy Fiction</div>
+                <div class="card-read-status">
+                    <p>Have you read this book?</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="card-delete">
+                    <button href="#" class="delete-icon-wrapper">
+                        <svg id="card-del" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path fill="#7aa7c7" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+                    </button>     
+                </div>
+            </div>
+            <div class="lib-card">
+                <div class="card-title">
+                    <p>Harry Potter and the Sorcerer's Stone</p>
+                    <div class="card-author">J.K. Rowling</div>
+                </div>
+
+                <div class="card-pages">263 Pages</div>
+                <div class="card-genre">Fantasy Fiction</div>
+                <div class="card-read-status">
+                    <p>Have you read this book?</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="card-delete">
+                    <button href="#" class="delete-icon-wrapper">
+                        <svg id="card-del" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path fill="#7aa7c7" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+                    </button>     
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; Copyright by @HarryAhnHS 
+        <a href="https://github.com/HarryAhnHS" class="github-a" target="_blank">
+            <div class="github-logo">
+                <img src="./imgs/github.png" alt="github">
+            </div>
+        </a>
+    </div>
+</body>
+</html>

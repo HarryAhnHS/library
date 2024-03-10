@@ -5,10 +5,12 @@ function Book(title, author, pages, genre, read) {
   this.title = title;
   this.author = author;
   this.pages = pages;
+  this.genre = genre;
   this.read = read;
 };
 
-console.log(myLibrary);
+// console.log(myLibrary);
+displayLibrary();
 
 
 // Add new book dialog modal
@@ -26,7 +28,6 @@ openModal.addEventListener("click", () => {
 
 // "Close" button closes the dialog
 closeModal.addEventListener("click", () => {
-    newForm.reset();
     dialog.close();
 });
 
@@ -44,20 +45,46 @@ function getBook() {
 
 // If submit and valid inputs, add book info to myLibrary list
 
-submit.addEventListener('click', () => {
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
     if (title.value != "" && author.value != "" && genre.value != "" && pages.value != "") {
         myLibrary.push(getBook());
     }
+    dialog.close();
 
+    console.log(myLibrary);
+    displayLibrary();
 });
 
 
-// Display library content 
-const library = document.querySelector(".lib-wrapper");
+// Display all library content in lib-wrapper div
+const lib_wrapper = document.querySelector(".lib-wrapper");
 function displayLibrary() {
     for (i = 0; i <myLibrary.length; i++) {
+        lib_wrapper.innerHTML += `<div class="lib-card">
+        <div class="card-title">
+            <p>${myLibrary[i].title}</p>
+            <div class="card-author">${myLibrary[i].author}</div>
+        </div>
 
+        <div class="card-pages">${myLibrary[i].pages} Pages</div>
+        <div class="card-genre">${myLibrary[i].genre}</div>
+        <div class="card-read-status">
+            <p>Have you read this book?</p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="card-delete">
+            <button href="#" class="delete-icon-wrapper">
+                <svg id="card-del" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path fill="#7aa7c7" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
+            </button>     
+        </div>
+    </div>`;
     }
 };
+
+
 
 

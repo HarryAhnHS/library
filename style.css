@@ -18,35 +18,37 @@ img {
 
 .header {
     /* background-color: #e1ecf4; */
-    height: 50px;
+    height: 140px;
     box-sizing: border-box;
     padding: 15px;
     padding-bottom: 0px;
+    color: #39739d;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    box-shadow: rgba(57, 115, 157, 0.4) 0px 5px, rgba(57, 115, 157, 0.3) 0px 10px, rgba(57, 115, 157, 0.2) 0px 15px, rgba(57, 115, 157, 0.1) 0px 20px, rgba(57, 115, 157, 0.05) 0px 25px;
+}
+
+.header > p {
+    margin: 0;
+    padding: 0;
+
     font-size: 32px;
-    font-weight: 300;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: 400;
 }
 
-.content {
-    height: calc(100vh - 50px);
-    box-sizing: border-box;
-
-    display: grid;
-    grid-template-rows: 80px auto;
-
-}
-
-/* Library Content */
 .lib-add-wrapper {
-    grid-row: 1/2;
+    padding: 15px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 /* Library new book dialog modal  */
 ::backdrop {
@@ -55,7 +57,6 @@ img {
 
 dialog {
     width: 20%;
-
     padding: 10px;
 }
 
@@ -158,10 +159,16 @@ dialog {
 /* Button Styling End */
 
 
+/* Library Content */
+.content {
+    height: calc(100vh - 140px);
+    box-sizing: border-box;
+
+    padding: 30px;
+}
+
 /* Lib Card Container */
 .lib-wrapper {
-    grid-row: 2/3;
-
     overflow-y: scroll;
 
     display: grid;

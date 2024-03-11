@@ -87,8 +87,8 @@ submit.addEventListener('click', (e) => {
     e.preventDefault();
     if (title.value != "" && author.value != "" && genre.value != "" && pages.value != "") {
         myLibrary.push(getBook());
+        dialog.close();
     }
-    dialog.close();
     displayLibrary();
 });
 

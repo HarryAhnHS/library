@@ -37,8 +37,11 @@ img {
     margin: 0;
     padding: 0;
 
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 28px;
+    font-weight: 200;
+
+
+    text-transform: uppercase;
 }
 
 .lib-add-wrapper {
@@ -58,21 +61,31 @@ img {
 dialog {
     width: 20%;
     padding: 10px;
+
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #7aa7c7;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #39739d;
 }
 
 #close-modal{
     border: none;
     background-color: transparent;
+
+    color: #2c5777;
+    opacity: 0.7;
 }
 
 #close-modal:hover {
-    transform: scale(1.2);
-    font-weight: 800;
+    transform: scale(1.1);
+    opacity: 1;
     transition: 0.1s;
 }
 
 #input-form {
-    height: 50vh;
+    height: 70vh;
 
     display: flex;
     flex-direction: column;
@@ -86,21 +99,53 @@ dialog {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+
+    opacity: 0.7;
 
     width: 90%;
-    
-    
 }
 
 .input-box > label {
     padding-right: 15px;
 
+
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: uppercase;
+
+    color: #2c5777;
+
+}
+
+.input-box > input {
+    border: none;
+    border-bottom: 0.8px solid #39739d;
+
+    background-color: transparent;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    font-family: "Poppins";
+}
+
+.input-box > input:focus {
+    outline: none;
+}
+
+.input-box:focus-within {
+    transform: scale(1.05);
+    opacity: 1;
+    transition: 0.1s;
 }
 
 .submit-box {
@@ -112,7 +157,57 @@ dialog {
     align-items: center;
 }
 
-/* Button CSS */
+/* Submit BTN Styling */
+/* CSS */
+#submit-btn {
+  appearance: button;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #39739d;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#39739d 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Poppins",Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 6px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+
+}
+
+#submit-btn:focus {
+  text-decoration: none;
+}
+
+#submit-btn:hover {
+  text-decoration: none;
+}
+
+#submit-btn:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+#submit-btn:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #39739d 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+
+/* Add Book BTN Button CSS */
 #add-book {
   background-color: #e1ecf4;
   border-radius: 3px;
@@ -124,7 +219,7 @@ dialog {
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.15385;
   margin: 0;
   outline: none;
@@ -224,7 +319,7 @@ dialog {
     text-overflow: ellipsis;
 
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .card-author {

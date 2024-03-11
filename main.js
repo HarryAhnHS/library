@@ -26,7 +26,7 @@ function displayLibrary() {
         <div class="card-read-status">
             <p>Have you read this book?</p>
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" id="${myLibrary[i].id}" onClick="toggleRead(this.id)">
                 <span class="slider"></span>
             </label>
         </div>
@@ -37,6 +37,7 @@ function displayLibrary() {
         </div>
     </div>`;
     }
+    console.log(myLibrary);
 };
 
 // Add first sample entry
@@ -88,21 +89,25 @@ submit.addEventListener('click', (e) => {
         myLibrary.push(getBook());
     }
     dialog.close();
-
-    console.log(myLibrary);
     displayLibrary();
 });
 
 // Delete book based on id
 function removeBook(id) {
-    console.log(id);
     myLibrary = myLibrary.filter((book) => book.id != id);
     displayLibrary();
 }
 
 
-// Read Toggle switch connect to 
-
-
+// Read Toggle switch to reflect in myLibrary
+function toggleRead(id) {
+    for (i = 0; i < myLibrary.length; i++) {
+        if (myLibrary[i].id == id) {
+            if (myLibrary[i].read == false) myLibrary[i].read = true;
+            else myLibrary[i].read = false;
+        }
+    }
+    // console.log(myLibrary);
+};
 
 

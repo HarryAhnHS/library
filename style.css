@@ -30,7 +30,7 @@ img {
     align-items: center;
 
 
-    box-shadow: rgba(57, 115, 157, 0.4) 0px 5px, rgba(57, 115, 157, 0.3) 0px 10px, rgba(57, 115, 157, 0.2) 0px 15px, rgba(57, 115, 157, 0.1) 0px 20px, rgba(57, 115, 157, 0.05) 0px 25px;
+    box-shadow: rgba(57, 115, 157, 0.4) 0px 2px, rgba(57, 115, 157, 0.3) 0px 4px, rgba(57, 115, 157, 0.2) 0px 6px, rgba(57, 115, 157, 0.1) 0px 8px, rgba(57, 115, 157, 0.05) 0px 10px;
 }
 
 .header > p {
@@ -38,7 +38,7 @@ img {
     padding: 0;
 
     font-size: 28px;
-    font-weight: 200;
+    font-weight: 300;
 
 
     text-transform: uppercase;
@@ -320,11 +320,15 @@ dialog {
 
     font-size: 16px;
     font-weight: 400;
+    
+    text-transform: capitalize;
 }
 
 .card-author {
     font-size: 12px;
     font-weight: 300;
+
+    text-transform: capitalize;
 }
 
 .card-pages {
@@ -344,6 +348,8 @@ dialog {
     margin: 10px;
     border-radius: 15px;
     color: white;
+
+    text-transform: uppercase;
 }
 
 .card-genre {
@@ -363,6 +369,8 @@ dialog {
     margin: 10px;
     border-radius: 15px;
     color: white;
+
+    text-transform: uppercase;
 }
 
 .card-read-status {

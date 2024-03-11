@@ -82,6 +82,14 @@ function getBook() {
 }
 
 
+
+// Adding Existing Books 
+myLibrary.push(new Book(id++,"To Kill a Mockingbird", "Harper Lee", 336, "Thriller",false));
+myLibrary.push(new Book(id++,"The Catcher in the Rye", "J.D. Salinger", 288, "Coming-of-age", false));
+myLibrary.push(new Book(id++,"Lolita", "Vladimir Nabokov", 336, "Erotic Noir", false));
+displayLibrary();
+
+
 // If submit and valid inputs, add book info to myLibrary list
 submit.addEventListener('click', (e) => {
     e.preventDefault();
